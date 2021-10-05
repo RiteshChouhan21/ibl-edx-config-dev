@@ -1,0 +1,9 @@
+name: ibl-enrollment-api
+version: 0.1.0
+patches:
+  openedx-lms-common-settings: |
+    DISABLE_STANDARD_ENROLLMENT = True
+    ENABLE_IBL_CHECKOUT_ENDPOINT = True
+    IBL_CHECKOUT_COURSE_WHITELIST = []
+    STRICT_IBL_ENROLLMENT_CATALOG_CHECK = True
+    #IBL_CATALOG_CHECKOUT_VIEW_NAME = ''
