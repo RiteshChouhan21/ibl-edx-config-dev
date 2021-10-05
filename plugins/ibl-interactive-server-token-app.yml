@@ -1,0 +1,6 @@
+name: ibl-interactive-server-token-app
+version: 0.1.0
+patches:
+  openedx-lms-common-settings: |
+    IBL_FERNET_KEY = "<set the key from above>"
+    IBL_INTERACTIVE_SERVER_OAUTH_APP_CLIENT_ID = "<client_id of oauth2 application>"
